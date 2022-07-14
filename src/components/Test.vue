@@ -10,7 +10,7 @@
 
 <script lang="ts" setup>
 import {ref} from 'vue'
-const a = ref(12354767)
+const a = ref(12354)
 </script>
 
 <style>

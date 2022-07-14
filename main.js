@@ -2,22 +2,31 @@
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
+
+// // 热加载
+// try {
+//   require('electron-reloader')(module,{});
+// } catch (_) {}
+let mainWindow;
 function createWindow () {
   // 创建浏览器窗口
-  const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+  mainWindow = new BrowserWindow({
+    width: 1200,
+    height: 800,
+    frame: false,
+    backgroundColor:'#fff',
     webPreferences: {
+      devTools:true,
       preload: path.join(__dirname, 'preload.js')
     }
   })
   if(process.env.NODE_ENV === 'development'){
+    console.log('init')
+    // mainWindow.webContents.openDevTools()
+    mainWindow.openDevTools()
     mainWindow.loadURL('http://localhost:3000')
   } else {
     mainWindow.loadFile(path.join(__dirname, 'dist', 'index.html'))
-  }
-  if (process.env.NODE_ENV === "development") {
-    mainWindow.webContents.openDevTools()
   }
   // 加载 index.html
 

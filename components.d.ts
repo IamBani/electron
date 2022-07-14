@@ -5,10 +5,26 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    AButton: typeof import('ant-design-vue/es')['Button']
     AInput: typeof import('ant-design-vue/es')['Input']
+    AInputSearch: typeof import('ant-design-vue/es')['InputSearch']
+    ALayout: typeof import('ant-design-vue/es')['Layout']
+    ALayoutContent: typeof import('ant-design-vue/es')['LayoutContent']
+    ALayoutHeader: typeof import('ant-design-vue/es')['LayoutHeader']
+    ALayoutSider: typeof import('ant-design-vue/es')['LayoutSider']
+    ASpace: typeof import('ant-design-vue/es')['Space']
+    ATooltip: typeof import('ant-design-vue/es')['Tooltip']
+    CloseOutlined: typeof import('@ant-design/icons-vue')['CloseOutlined']
+    ExpandOutlined: typeof import('@ant-design/icons-vue')['ExpandOutlined']
+    Header: typeof import('./src/components/Layout/Header/index.vue')['default']
+    InfoCircleOutlined: typeof import('@ant-design/icons-vue')['InfoCircleOutlined']
+    Layout: typeof import('./src/components/Layout/index.vue')['default']
+    LeftOutlined: typeof import('@ant-design/icons-vue')['LeftOutlined']
+    MinusOutlined: typeof import('@ant-design/icons-vue')['MinusOutlined']
+    RightOutlined: typeof import('@ant-design/icons-vue')['RightOutlined']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Search: typeof import('./src/components/Layout/Search/index.vue')['default']
+    SearchOutlined: typeof import('@ant-design/icons-vue')['SearchOutlined']
     Test: typeof import('./src/components/Test.vue')['default']
   }
 }
