@@ -5,6 +5,7 @@ import '@vue/runtime-core'
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    AAvatar: typeof import('ant-design-vue/es')['Avatar']
     AInput: typeof import('ant-design-vue/es')['Input']
     AInputSearch: typeof import('ant-design-vue/es')['InputSearch']
     ALayout: typeof import('ant-design-vue/es')['Layout']
@@ -19,13 +20,17 @@ declare module '@vue/runtime-core' {
     InfoCircleOutlined: typeof import('@ant-design/icons-vue')['InfoCircleOutlined']
     Layout: typeof import('./src/components/Layout/index.vue')['default']
     LeftOutlined: typeof import('@ant-design/icons-vue')['LeftOutlined']
+    MenuOutlined: typeof import('@ant-design/icons-vue')['MenuOutlined']
     MinusOutlined: typeof import('@ant-design/icons-vue')['MinusOutlined']
     RightOutlined: typeof import('@ant-design/icons-vue')['RightOutlined']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     Search: typeof import('./src/components/Layout/Search/index.vue')['default']
     SearchOutlined: typeof import('@ant-design/icons-vue')['SearchOutlined']
+    SkinOutlined: typeof import('@ant-design/icons-vue')['SkinOutlined']
+    SvgIcon: typeof import('./src/components/SvgIcon.vue')['default']
     Test: typeof import('./src/components/Test.vue')['default']
+    UserOutlined: typeof import('@ant-design/icons-vue')['UserOutlined']
   }
 }
 

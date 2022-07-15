@@ -27,6 +27,8 @@ const siderBg = store.theme.siderBg
    width: 100%;
   :deep(.ant-layout-header) {
     background: transparent !important;
+    -webkit-app-region: drag;
+    padding: 0 30px;
   }
   :deep(.ant-layout) {
     background: v-bind('centerBg');
