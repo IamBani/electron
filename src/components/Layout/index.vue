@@ -1,6 +1,9 @@
 <template>
   <a-layout class="layout">
-    <a-layout-sider></a-layout-sider>
+    <a-layout-sider>
+      <Logo />
+      <Sider />
+    </a-layout-sider>
     <a-layout>
       <a-layout-header>
         <sHeader></sHeader>
@@ -29,12 +32,17 @@ const siderBg = store.theme.siderBg
     background: transparent !important;
     -webkit-app-region: drag;
     padding: 0 30px;
+    height: $header-height;
+    line-height: 85px;
   }
   :deep(.ant-layout) {
     background: v-bind('centerBg');
   }
   :deep(.ant-layout-sider){
     background: v-bind('siderBg');
+  }
+  :deep(.ant-layout-content){
+    margin-top: 20px;
   }
 }
 </style>
