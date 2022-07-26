@@ -43,6 +43,7 @@ const siderBg = store.theme.siderBg
   }
   :deep(.ant-layout-content){
     margin-top: 20px;
+    padding: 0 30px;
   }
 }
 </style>

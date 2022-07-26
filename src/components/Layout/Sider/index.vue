@@ -2,16 +2,28 @@
   <a-menu class="menu">
     <a-menu-item-group>
       <template #title>在线音乐</template>
-      <a-menu-item key="1">音乐馆</a-menu-item>
-      <a-menu-item key="2">视频</a-menu-item>
-      <a-menu-item key="3">电台</a-menu-item>
+      <a-menu-item key="1">
+        <svg-icon name="musicMuseum" class="icon"></svg-icon> 音乐馆</a-menu-item
+      >
+      <a-menu-item key="2">
+        <svg-icon name="video" class="icon"></svg-icon> 视频</a-menu-item
+      >
+      <a-menu-item key="3">
+        <svg-icon name="radio" class="icon"></svg-icon> 电台</a-menu-item
+      >
     </a-menu-item-group>
 
     <a-menu-item-group key="g2">
       <template #title><div class="group">我的音乐</div></template>
-      <a-menu-item key="4">本地和下载</a-menu-item>
-      <a-menu-item key="5">最近播放</a-menu-item>
-      <a-menu-item key="6">试听列表</a-menu-item>
+      <a-menu-item key="4">
+        <svg-icon name="local" class="icon"></svg-icon> 本地和下载</a-menu-item
+      >
+      <a-menu-item key="5">
+        <svg-icon name="lastPlay" class="icon"></svg-icon> 最近播放</a-menu-item
+      >
+      <a-menu-item key="6">
+        <svg-icon name="auditionList" class="icon"></svg-icon> 试听列表</a-menu-item
+      >
     </a-menu-item-group>
   </a-menu>
 </template>
@@ -42,5 +54,8 @@ import { defineComponent } from 'vue'
 }
 .group {
   margin-top: 30px;
+}
+.icon{
+  font-size: 16px;
 }
 </style>

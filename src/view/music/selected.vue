@@ -1,12 +1,11 @@
 <template>
-  <div>about</div>
+  112
 </template>
 
 <script lang="ts" setup>
-import { defineComponent } from 'vue'
+import { ref } from "vue-demi";
 
 </script>
-
 
 <style>
 
